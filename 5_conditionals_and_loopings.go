@@ -66,9 +66,6 @@ func main() {
 	}
 
 
-
-
-
 	// SWITCH
 	height := 5
 

@@ -29,10 +29,10 @@ func main() {
 /*
 	Channels provide a way for two goroutines to communicate with one another and synchronize their execution.
 */
-	var c chan string = make(chan string)
+	c := make(chan string)
 
 	go pinger(c)
-	//go ponger(c)
+	go ponger(c)
 	go printer(c)
 
 	var input string

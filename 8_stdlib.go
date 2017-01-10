@@ -30,7 +30,6 @@ func main(){
 	p("Split:     ", s.Split("a-b-c-d-e", "-"))
 	p("ToLower:   ", s.ToLower("TEST"))
 	p("ToUpper:   ", s.ToUpper("test"))
-	p()
 
 	// Not part of `strings`, but worth mentioning here, are
 	// the mechanisms for getting the length of a string in

@@ -10,7 +10,7 @@ func main() {
 	fmt.Println("a = ", a)
 
 	// multiple variables instantiated at once
-	var f, e int = 1, 2
+	var f, e, intVal1, intVal2 int = 1, 2, 3, 4
 	fmt.Println(f, e)
 
 	// type inference
@@ -20,16 +20,21 @@ func main() {
 	fmt.Println(d)
 
 	// Shorthand with type inference
-	k :=100
+	k := 100
 	fmt.Println(k)
 
+	// Multiple assignments
+	f, e = intVal1, intVal2
+
+	// Simple value inversions
+	f, e = e, f
 
 	var (
-		g = 2
+		g     = 2
 		h int = 40
 	)
 
-	fmt.Println(g,h)
+	fmt.Println(g, h)
 
 	// CONSTANTS
 	// Typed

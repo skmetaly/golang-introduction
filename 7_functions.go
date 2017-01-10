@@ -4,13 +4,16 @@ import "fmt"
 
 func main() {
 
+	// Deferring a function
+	defer printString("i am last")
+
 	// simple function
-	listNums := []int{1, 2, 3, 4, 5}
-	sum := addThemUp(listNums)
+	listNumbers := []int{1, 2, 3, 4, 5}
+	sum := addThemUp(listNumbers)
 	fmt.Println("Sum:", sum)
 
 	// multiple returns
-	num1, num2, num31 := next3Vals(5)
+	num1, num2, num31:= next3Vals(5)
 	fmt.Println(num1, num2, num31)
 
 	// variadic functions
@@ -27,14 +30,12 @@ func main() {
 	fmt.Println("Double", doubleNum())
 	fmt.Println("Double", doubleNum())
 
-	// Deferring a function
-	defer printString("i am last")
 }
 
-func addThemUp(nums []int) int {
+func addThemUp(numbers []int) int {
 	sum := 0
 
-	for _, value := range nums {
+	for _, value := range numbers {
 		sum += value
 	}
 
